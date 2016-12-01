@@ -1056,7 +1056,7 @@ public class Interacao {
                 + "-----------------------------------------+");
         System.out.println("|           1 - Consultar evento por regional      "
                 + "       3 - Consultar evento por descrição               "
-                + "3 - Consultar evento por data                |");
+                + "5 - Consultar evento por data                |");
         System.out.println("|           2 - Consultar evento por periodo       "
                 + "       4 - Consultar todos os eventos                       "
                 + "                                         |");
