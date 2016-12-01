@@ -45,7 +45,7 @@ public class ListaCalendario {
             Collections.sort(calendarioUfg, (Calendario c1, Calendario c2) -> {
                 String c1Value = c1.getEvento().getDataInicio();
                 String c2Value = c2.getEvento().getDataInicio();
-                return c2Value.compareTo(c1Value);
+                return c1Value.compareTo(c2Value);
             });
 
         } else {
@@ -65,23 +65,22 @@ public class ListaCalendario {
     public void removerCalendarioUfg(String nome, String data) throws
             CalendarioInvalido {
 
-        //Iteração com cada evento cadastrado na lista.
-        for (Iterator<Calendario> it = this.calendarioUfg.iterator();
-                it.hasNext();) {
-            Calendario calendario = it.next();
+        //Iteração por toda a lista
+        for (Calendario calendario : this.calendarioUfg) {
 
-            //Compara até encontrar o evento a ser removido.
+            //Compara até localizar o evento a ser atualizado
             if (calendario.getEvento().getNomeEvento().equals(nome)
                     && calendario.getEvento().getDataInicio().equals(data)) {
 
-                //Remove o evento.
-                it.remove();
+                calendarioUfg.remove(calendario);
 
-            } else {
-                throw new CalendarioInvalido("Evento não encontrado para "
-                        + "remoção.");
+                return;
             }
+
         }
+
+        throw new CalendarioInvalido("Evento não encontrado para atualização.");
+
     }
 
     /**
@@ -112,7 +111,7 @@ public class ListaCalendario {
                         -> {
                     String c1Value = c1.getEvento().getDataInicio();
                     String c2Value = c2.getEvento().getDataInicio();
-                    return c2Value.compareTo(c1Value);
+                    return c1Value.compareTo(c2Value);
                 });
 
                 return;

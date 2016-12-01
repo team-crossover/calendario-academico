@@ -457,19 +457,15 @@ public class Interacao {
                         EntradaInvalida e) {
                     System.out.println(e.getMessage());
                     pula();
-                    loginAdministrador(leitor, lista);
                 } catch (ParseException e) {
                     msgDataInvalida();
                     pula();
-                    loginAdministrador(leitor, lista);
                 } catch (IndexOutOfBoundsException e) {
                     msgSucesso();
                     pula();
-                    loginAdministrador(leitor, lista);
                 } catch (NumberFormatException e) {
                     msgOpcaoInvalida();
                     pula();
-                    loginAdministrador(leitor, lista);
                 }
 
             } while (opcao != 0);
@@ -498,6 +494,7 @@ public class Interacao {
                 + "=========================================+");
         System.out.print("| * Digite o nome exato do evento a remover: ");
         String nome = leitor.nextLine();
+
         System.out.println("|--------------------------------------------------"
                 + "------------------------------------------------------------"
                 + "-----------------------------------------|");
