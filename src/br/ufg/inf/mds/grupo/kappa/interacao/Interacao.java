@@ -969,13 +969,13 @@ public class Interacao {
                 + "------------------------+-----------------------------------"
                 + "-----------------------------------------+");
         System.out.println("|                               1 - Consultar "
-                + "evento dessa regional               "
-                + "   3 - Consultar evento por descrição                       "
-                + "          |");
+                + "todos eventos dessa regional      "
+                + "   2 - Consultar por período de datas                       "
+                + "            |");
         System.out.println("|                               "
-                + "2 - Consultar evento por data                        "
-                + "4 - Consultar todos os eventos                              "
-                + "       |");
+                + "3 - Consultar por palavra                          "
+                + "4 - Consultar por data específica                           "
+                + "         |");
         System.out.println("+-------------------------------------------------"
                 + "------------------------------------------------------------"
                 + "------------------------------------------+");
