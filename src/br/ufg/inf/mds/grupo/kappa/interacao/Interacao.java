@@ -646,7 +646,6 @@ public class Interacao {
                 System.out.print("| * Digite o nome da regional: ");
                 resultadoConsulta = lista.exibirPorRegional(Regional
                         .getRegionalFromNome(entrada.nextLine()));
-                String nome = entrada.nextLine();
                 System.out.println("+=========================================="
                         + "===================================================="
                         + "===================================================="
