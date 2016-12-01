@@ -448,7 +448,7 @@ public class Interacao {
                         default:
                             msgOpcaoNaoExistente();
                             pula();
-                            loginAdministrador(leitor, lista);
+                            exibirMenuAdministrador();
                             break;
                     }
 
