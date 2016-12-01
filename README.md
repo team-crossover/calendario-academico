@@ -1,7 +1,7 @@
-# ProjetoKappa-MDS
+# Sistema de Calendário Acadêmico (MDS)
 Grupo Kappa
 
-Membros:
+**Membros:**
 Antonio Silva;
 Natália Lopes;
 Nelson William;
