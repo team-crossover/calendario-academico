@@ -46,62 +46,6 @@ public class Interacao {
         System.out.println("Iniciando...");
         int opcao = -1;
 
-        //PRESET EVENTOS PARA TESTES
-        //< R E M O V E R>
-        Evento newEvento = new Evento();
-        try {
-            newEvento.setDataInicio("02/02/2000");
-            newEvento.setDataFim("03/02/2000");
-            newEvento.setHoraInicio("06:00");
-            newEvento.setHoraFim("09:00");
-            newEvento.setNomeEvento("Evento A");
-        } catch (ParseException | EntradaInvalida | NomeInvalido ex) {
-            Logger.getLogger(Interacao.class.getName())
-                    .log(Level.SEVERE, null, ex);
-        }
-        Calendario newCalendairo = new Calendario();
-        try {
-            newCalendairo.addCategoria(Categoria.DOCENTE);
-            newCalendairo.addCategoria(Categoria.SERVIDOR);
-            newCalendairo.addRegional(Regional.GOIAS);
-            newCalendairo.addRegional(Regional.GOIANIA);
-            newCalendairo.setEvento(newEvento);
-        } catch (EntradaInvalida | EventoInvalido ex) {
-            Logger.getLogger(Interacao.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        try {
-            listaCalendario.adicionarCalendarioUfg(newCalendairo);
-        } catch (CalendarioInvalido ex) {
-            Logger.getLogger(Interacao.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        newEvento = new Evento();
-        try {
-            newEvento.setDataInicio("02/03/2000");
-            newEvento.setDataFim("03/04/2000");
-            newEvento.setHoraInicio("08:00");
-            newEvento.setHoraFim("07:00");
-            newEvento.setNomeEvento("Evento B");
-        } catch (ParseException | EntradaInvalida | NomeInvalido ex) {
-            Logger.getLogger(Interacao.class.getName())
-                    .log(Level.SEVERE, null, ex);
-        }
-        newCalendairo = new Calendario();
-        try {
-            newCalendairo.addCategoria(Categoria.DISCENTE);
-            newCalendairo.addCategoria(Categoria.COMUNIDADE);
-            newCalendairo.addRegional(Regional.JATAI);
-            newCalendairo.addRegional(Regional.GOIANIA);
-            newCalendairo.setEvento(newEvento);
-        } catch (EntradaInvalida | EventoInvalido ex) {
-            Logger.getLogger(Interacao.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        try {
-            listaCalendario.adicionarCalendarioUfg(newCalendairo);
-        } catch (CalendarioInvalido ex) {
-            Logger.getLogger(Interacao.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        //</ R E M O V E R>
-
         //Exibição do menu principal até que o usuário saia
         do {
 
