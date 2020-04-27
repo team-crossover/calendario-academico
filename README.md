@@ -1,10 +1,7 @@
-# Sistema de Calendário Acadêmico (MDS)
-Projeto de um sistema de calendário acadêmico em C. Feito para a disciplina de Métodos de Desenvolvimento de Software em 2016.
-Engenharia de Software, Instituto de Informática, Universidade Federal de Goiás.
+# Calendário Acadêmico
+Sistema simples de calendário acadêmico feito em C.
 
-**Grupo Kappa:**
-- Antonio Silva;
-- Natália Lopes;
-- Nelson William;
-- Rafael Reis;
-- Sofia Moraes.
+Trabalho feito para a disciplina de Métodos de Desenvolvimento de Software, do semestres 2016-2, do curso de graduação em Engenharia de Software da Universidade Federal de Goiás.
+
+## Licença
+[MIT License](LICENSE)
